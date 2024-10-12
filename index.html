@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random JS Features Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">Welcome to a Random Cool Website!</h1>
+
+        <div class="clock" id="clock"></div>
+
+        <div class="quote-section">
+            <p id="quote">Click the button to get a motivational quote!</p>
+            <button onclick="generateQuote()">Generate Quote</button>
+        </div>
+
+        <!-- To-Do List -->
+        <div class="todo-section">
+            <h2>To-Do List</h2>
+            <input type="text" id="new-task" placeholder="Enter a task" />
+            <button onclick="addTask()">Add Task</button>
+            <ul id="task-list"></ul>
+        </div>
+
+        <!-- Weather Widget -->
+        <div class="weather-widget">
+            <h2>Current Weather</h2>
+            <div id="weather">25°C, Sunny</div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()">↑ Scroll to Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
